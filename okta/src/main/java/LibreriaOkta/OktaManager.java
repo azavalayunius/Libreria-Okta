@@ -218,7 +218,7 @@ public class OktaManager extends BaseSharedActivity implements OktaInterface.Pre
         String postBody = "";
         RequestBody body = RequestBody.create(MEDIA_TYPE, postBody);
         Request request = new Request.Builder()
-                .url(urlDomain + "/api/v1/users/" + userId + "/lifecycle/activate?sendEmail=false")
+                .url(urlDomain + "/api/v1/users/" + userId + "/lifecycle/activate")
                 .header("Accept", "application/json")
                 .header("Content-Type", "application/json")
                 .header("Authorization", "SSWS " + apiKey)
